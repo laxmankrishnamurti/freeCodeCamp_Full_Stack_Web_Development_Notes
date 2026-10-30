@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input as a button</title>
+  </head>
+  <body>
+    <form action="#">
+      <input class="start-btn" type="button" value="Start Game" />
+      <input type="button" value="Reset">
+    </form>
+
+    <button>❤️</button>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const btn = document.querySelector(".start-btn");
+        btn.addEventListener("click", () => {
+          const paraEl = document.createElement("p");
+          const bodyEl = document.querySelector("body");
+
+          bodyEl.appendChild(paraEl);
+          paraEl.textContent = "You clicked on Start Game Button";
+        });
+      });
+
+
+      const btn = document.getElementsByTagName('button');
+      const myBtn = [...btn];
+      console.log(myBtn)
+      myBtn[0].addEventListener('click', () => {
+            alert("I Love You!")
+      })
+
+    </script>
+  </body>
+</html>

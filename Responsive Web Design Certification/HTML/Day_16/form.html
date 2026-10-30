@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Form</title>
+</head>
+<body>
+      <p>Input with <span style="color: red">✱</span> is required without
+      entering the required field you can't submit the form.</p>
+      <form action="https://google.com">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" >
+            <span style="color: red">✱</span>
+
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" required>
+
+            <label for="email">Email</label>
+            <input type="email" placeholder="something@gmail.com" >
+
+            <label for="dob">DOB</label>
+            <input type="text" placeholder="yyyy-mm-dd">
+
+            <label for="dob">DOB</label>
+            <input type="text" placeholder="mm-dd-yyyy">
+
+            <button type="button">Show Alert</button>
+      </form>
+
+<script src="./script.js"></script>
+</body>
+</html>
