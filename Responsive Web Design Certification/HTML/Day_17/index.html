@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Form Methods</title>
+</head>
+<body>
+
+      <!-- GET : When we retrieve data from server just to show the user details.  -->
+      <!-- POST : When we create someting new  -->
+      <!-- PATCH : When we update something on a existing data  -->
+      <!-- DELETE : When we delete existing data  -->
+
+      <form method="post" action="https://google.com" target="_blank"> 
+
+            <fieldset>
+                  <legend>Personal Information</legend>
+                  <label for="firstname">Firstname</label>
+                  <input type="text" id="firstname" size="10">
+
+                  <label for="lastname">Lastname</label>
+                  <input type="text" id="lastname">
+
+                  <label for="age">Age</label>
+                  <input type="number" id="age" min="18" max="100">
+            </fieldset>
+
+            <fieldset>
+                  <legend>Experiences</legend>
+            </fieldset>
+
+            <fieldset>
+                  <legend for="programming">Choose your programming language</legend>
+                  <select name="programming-language" id="programming">
+                        <option value="null">Select Your Programming Language</option>
+                        <option value="c++">C++</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="java">Java</option>
+                  </select>
+
+            </fieldset>
+
+
+            <label for="username">Choose your username</label>
+            <input type="text" id="username">
+
+            <br>
+
+            <label for="comments">Other Comments?</label>
+            <textarea name="comments" id="comments" placeholder="write here..."></textarea>
+
+            <button>Submit</button>
+      </form>
+</body>
+</html>

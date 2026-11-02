@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Fulfill the user stories below and get all the tests to pass to complete the lab.</p>
+
+    <form method="get" action="#" id="survey-form">
+      
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" name="email" placeholder="something@email.com" required>
+
+        <label for="age" id="number-label">Age</label>
+        <input type="number" id="number" min="15" max="100" placeholder="your age must lies between 15 to 100">
+      </fieldset>
+
+      <fieldset>
+        <legend>Select Your City</legend>
+
+        <select id="dropdown" name="city">
+          <option value="patna">Patna</option>
+          <option value="delhi">Delhi</option>
+          <option value="kolkata">Kolkata</option>
+          <option value="ranchi">Ranchi</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Are you 18+?</legend>
+
+        <label for="18-yes">Yes</label>
+        <input type="radio" id="18-yes" name="18+" value="yes">
+
+        <label for="18-no">No</label>
+        <input type="radio" id="18-no" name="18+" value="no">
+      </fieldset>
+
+      <fieldset>
+        <legend>How many things do you know?</legend>
+
+        <label for="html">HTML</label>
+        <input id="html" type="checkbox" name="skills" value="html">
+
+        <label for="css">CSS</label>
+        <input id="css" type="checkbox" name="skills" value="css">
+
+        <label for="javascript">JavaScript</label>
+        <input id="javascript" type="checkbox" name="skills" value="javascript">
+
+        <label for="react">React</label>
+        <input id="react" type="checkbox" name="skills" value="react">
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional Comments</legend>
+
+        <textarea name="additional-comments"></textarea>
+      </fieldset>
+
+      <button type="submit" id="submit">Submit</button>
+
+    </form>
+  </body>
+</html>
